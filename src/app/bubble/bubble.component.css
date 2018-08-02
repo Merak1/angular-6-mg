@@ -1,0 +1,60 @@
+
+
+.bubble-main{
+    /* background-color: rgb(92, 29, 46); */
+    border: solid 3px black;
+    height: 50vh;
+    width: 50vh;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: auto;
+    padding-left: auto;
+}
+.bubble{
+    /* background-color : var(--color-burbuja); */
+    border: solid 3px black;
+    height: 50vh;
+    width: 50vh;
+    position: relative;
+    border-radius: 50%;
+    transform-origin: 50% 50% 0;
+    transition: width 2s, height 2s;
+    transition: top 2s , left 2s;
+    transform-style: preserve-3D;
+    transition-delay: 1s;
+    background-image: url("/assets/plato1.png");
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.bubble:hover{ 
+        /* background-color: var(--segundo-burbuja);     */
+        height: 55VH;
+        width: 55VH;
+        top:-2.5vh;
+        left:-2.5vh;
+        transform: rotate(395deg);
+}
+.contenido-bubble{
+    padding: 5px;
+    margin-right: 5px;
+    margin-left:5px;
+    
+}
+.titulo{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.titulo:hover{
+    font-size: 150%;
+
+}
+.encabezado {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    color: rgb(0, 0, 82);
+}

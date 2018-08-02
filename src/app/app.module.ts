@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { InfoComponent } from './info/info.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { AboutComponent } from './about/about.component';
+import { BubbleComponent } from './bubble/bubble.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AboutComponent } from './about/about.component';
     InfoComponent,
     InicioComponent,
     AboutComponent,
-    MainComponent
+    MainComponent,
+    BubbleComponent
   ],
   imports: [
     BrowserModule,

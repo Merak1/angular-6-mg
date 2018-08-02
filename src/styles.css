@@ -1,6 +1,8 @@
 :root {
     --main-bg-color: rgb(66, 0, 0);
-  }
+    --color-burbuja: rgb(5, 94, 228);
+    --segundo-burbuja:rgb(99, 27, 170);
+}
 li  {
     list-style: none;
 }
@@ -15,12 +17,13 @@ ul{
     text-align: center;
     align-items: center;    
 }
-
+    
 .circulo{
     vertical-align: middle;
     
 }
-a {
+
+/* a {
     width: 200px;
     height: 200px;
     background-color: rgb(240, 109, 109);
@@ -36,4 +39,4 @@ a {
 
 a:hover{
     background-color: rgb(0, 110, 206);
-}
+} */
