@@ -2,7 +2,8 @@
 
 .bubble-main{
     /* background-color: rgb(92, 29, 46); */
-    border: solid 3px black;
+    
+    /* border: solid 3px black; */
     height: 50vh;
     width: 50vh;
     padding: 10px;
@@ -13,28 +14,33 @@
 }
 .bubble{
     /* background-color : var(--color-burbuja); */
-    border: solid 3px black;
+    background: rgb(255,15,145);
+background: linear-gradient(0deg, rgba(255,15,145,1) 0%, rgba(246,146,219,1) 45%, rgba(255,253,78,1) 100%);
+    /* border: solid 3px black; */
     height: 50vh;
     width: 50vh;
     position: relative;
     border-radius: 50%;
     transform-origin: 50% 50% 0;
-    transition: width 2s, height 2s;
-    transition: top 2s , left 2s;
+    transition: width 4s, height 4s;
+    transition: top 4s , left 4s;
     transform-style: preserve-3D;
     transition-delay: 1s;
-    background-image: url("/assets/plato1.png");
+    
+    /* background-image: url("/assets/plato1.png"); */
     background-size: 100%;
     overflow: hidden;
 }
 
 .bubble:hover{ 
         /* background-color: var(--segundo-burbuja);     */
-        height: 55VH;
-        width: 55VH;
-        top:-2.5vh;
-        left:-2.5vh;
-        transform: rotate(395deg);
+        height: 60VH;
+        width: 60VH;
+        top:-5vh;
+        left:-5vh;     
+}
+#overlap{
+    z-index: 4;
 }
 .contenido-bubble{
     padding: 5px;
@@ -42,6 +48,14 @@
     margin-left:5px;
     
 }
+#overlap{
+    margin-top: 50vh;
+}
+.bubble:hover #overlap{
+    /* margin-top: 0vh; */
+    display: none;
+}
+
 .titulo{
     display: flex;
     flex-flow: column;
@@ -57,4 +71,81 @@
     font-size: 2em;
     font-weight: 900;
     color: rgb(0, 0, 82);
+    text-align: center
+    
+}
+
+.loader {
+    
+    border: 20px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #ff006f; /* Blue */
+    border-radius: 50%;
+    height: 50vh;
+    width: 50vh;
+    /* animation: spin 2s linear ; */
+    transform-origin: 50% 50% 0;
+    position: absolute;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: auto;
+    padding-left: auto;
+    /* transition: display 5s; */
+}   
+.bubble:hover .loader {
+    animation: spin 2s  ;
+    opacity: 0;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);opacity: 1;}
+    100% { transform: rotate(360deg);opacity: 0;}
+}
+/* @keyframes fondo {
+    0% {background-image: linear-gradient(0deg, rgba(255,15,145,1) 0%, rgba(246,146,219,1) 45%, rgba(255,253,78,1) 100%); }
+    100% {background-image: url("/assets/zana.jpg");  background-repeat: no-repeat; }
+} */
+    @keyframes fondo {
+        0% { opacity: 0;}
+        100% { opacity: 1;}
+    }
+
+    .bubble:hover .new{
+        animation: fondo 2s linear;
+    }
+.new{
+    height:100%;
+}
+.new {
+    transition: opacity 0.5s linear;
+}
+
+.new {
+  opacity: 0;
+  display: hidden;
+      margin-top: auto;
+      height: 50vh;
+}
+
+.bubble:hover .new {
+    opacity: 1;
+}
+.bubble:hover .test {
+    display: none;
+} 
+.
+.overlord{
+    padding: none;
+    transform-origin: 50% 50% 0;
+    height: 100%;
+    width: 100%;
+}
+.test{
+    /* width: 100%;
+    height: 100%;
+    margin-top: 50%;
+    position: absolute;
+    margin-right: 49%;
+    margin-left: -1vh; */
+    z-index: 2;
 }

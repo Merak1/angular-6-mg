@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BubbleComponent implements OnInit {
 
+  title = 'Zanahoria';
+  changeTitle() {
+      this.title = 'Angular app'
+  }
+
   constructor() { }
 
   ngOnInit() {
