@@ -1,20 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-bubble',
   templateUrl: './bubble.component.html',
   styleUrls: ['./bubble.component.css']
 })
-export class BubbleComponent implements OnInit {
-
-  title = 'Zanahoria';
-  changeTitle() {
-      this.title = 'Angular app'
-  }
-
+export class  BubbleComponent {
+  @Input() menuItems: string;
+  @Input() menuLink: number;
   constructor() { }
 
-  ngOnInit() {
   }
-
-}

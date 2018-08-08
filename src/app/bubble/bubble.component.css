@@ -11,6 +11,10 @@
     margin-left: auto;
     padding-right: auto;
     padding-left: auto;
+ 
+}
+.ar{
+    margin: 20px;
 }
 .bubble{
     /* background-color : var(--color-burbuja); */
