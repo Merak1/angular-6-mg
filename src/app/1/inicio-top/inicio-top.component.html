@@ -1,0 +1,41 @@
+<!-- 
+<div class="inicio-top">
+  <div class="inicio-top-row">
+
+    <a routerLink="/">35</a>  
+    <h1 class="center-menu">  Este es el menu de funcionalidad primero </h1>
+    
+  </div>
+</div> -->
+
+
+
+
+<div class="inicio-top">  
+  <div id="big-circle" class="circle big">
+
+
+      <ul>
+          <li *ngFor="let sub of subMenu " >    
+            <app-bubble 
+            menuItems = "{{sub.titulo}}"
+            menuLink = "{{sub.img}}"
+           
+           
+            >
+              </app-bubble>
+          </li>
+        </ul>
+
+
+
+
+    
+    <div class="circle one"></div>
+    <div class="circle two"></div>
+    <div class="circle three"></div>
+    <div class="circle four"></div>
+    <div class="circle five"></div>
+  <div class="circle six"></div>
+</div>
+</div>

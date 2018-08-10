@@ -8,6 +8,7 @@ import { InfoComponent } from './2/info/info.component';
 import { InicioComponent } from './1/inicio/inicio.component';
 import { AboutComponent } from './3/about/about.component';
 import { BubbleComponent } from './bubble/bubble.component';
+import { InicioTopComponent } from './1/inicio-top/inicio-top.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BubbleComponent } from './bubble/bubble.component';
     InicioComponent,
     AboutComponent,
     MainComponent,
-    BubbleComponent
+    BubbleComponent,
+    InicioTopComponent
 
   ],
   imports: [

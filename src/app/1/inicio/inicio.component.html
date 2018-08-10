@@ -1,37 +1,35 @@
-
-
 <div class="center">
+  <div class="non-bubble">
 
-  <a routerLink="/">35</a>  
-  <!-- <h1>  Este es el menu de funcionalidad primero    </h1>
-  <ul>
-    <li> <a> Fruta ► </a> </li>
-    <li> <a> Verdura ► </a> </li>
-    <li> <a> Cereales y leguminosas ► </a> </li>
-  <li> <a> Alimentos de origen animal ► </a> </li>
-  <li> <a> Aceites, grasas y azúcares ► </a> </li>
-  <li> <a> Bebidas alcohólicas ► </a> </li>
-</ul>
+    <app-inicio-top> </app-inicio-top>
+  </div>
+
+
+
+
+  <div class="inicio-top">
+    <div id="big-circle" class="circle big">
+
+
+
+
+
+
+      <ul>
+        <li *ngFor="let sub of subMenu ">
+          <app-bubble menuItems="{{sub.titulo}}" menuLink="{{sub.img}}">
+          </app-bubble>
+        </li>
+      </ul>
+      <div class="circle one"></div>
+      <div class="circle two"></div>
+      <div class="circle three"></div>
+      <div class="circle four"></div>
+      <div class="circle five"></div>
+      <div class="circle six"></div>
+    </div>
+  </div>
+  <h1>
+
+  </h1>
 </div>
-<app-bubble>  </app-bubble>
-  
-<h2>benis</h2> -->
-<ul>
-  <li *ngFor="let sub of subMenu " >    
-    <app-bubble 
-    menuItems = "{{sub.titulo}}"
-    menuLink = "{{sub.img}}"
-   
-   
-    >
-      </app-bubble>
-  </li>
-</ul>
-<h1>
-
-</h1> 
-</div>
-
-
-
-
