@@ -4,25 +4,27 @@
     /* background-color: rgb(92, 29, 46); */
     
     /* border: solid 3px black; */
-    height: 50vh;
-    width: 50vh;
+    height: 30vh;
+    width: 30vh;
     padding: 10px;
     margin-right: auto;
     margin-left: auto;
     padding-right: auto;
     padding-left: auto;
- 
+    cursor: pointer;
 }
 .ar{
     margin: 20px;
+    
+
 }
 .bubble{
     /* background-color : var(--color-burbuja); */
     background: rgb(255,15,145);
     background: linear-gradient(0deg, rgba(255,15,145,1) 0%, rgba(246,146,219,1) 45%, rgba(255,253,78,1) 100%);
     /* border: solid 3px black; */
-    height: 50vh;
-    width: 50vh;
+    height: 30vh;
+    width: 30vh;
     position: relative;
     border-radius: 50%;
     transform-origin: 50% 50% 0;
@@ -38,10 +40,10 @@
 
 .bubble:hover{ 
         /* background-color: var(--segundo-burbuja);     */
-        height: 60VH;
-        width: 60VH;
-        top:-5vh;
-        left:-5vh;     
+        height: 35VH;
+        width: 35VH;
+        top:-2.5vh;
+        left:-2.5vh;     
 }
 #overlap{
     z-index: 4;
@@ -73,7 +75,7 @@
 }
 .encabezado {
     font-family: 'Do Hyeon', sans-serif;
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: 900;
     color: rgb(0, 0, 82);
     text-align: center
@@ -85,8 +87,8 @@
     border: 20px solid #f3f3f3; /* Light grey */
     border-top: 16px solid #ff006f; /* Blue */
     border-radius: 50%;
-    height: 50vh;
-    width: 50vh;
+    height: 30vh;
+    width: 30vh;
     /* animation: spin 2s linear ; */
     transform-origin: 50% 50% 0;
     position: absolute;
@@ -164,7 +166,7 @@
     text-align: center;
 }
 .bubble:hover .overlord {
-    height: 60VH;
-    width: 60VH;
+    height: 50VH;
+    width: 50VH;
     margin-top: -5vh;
 } 

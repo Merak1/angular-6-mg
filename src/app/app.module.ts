@@ -9,6 +9,12 @@ import { InicioComponent } from './1/inicio/inicio.component';
 import { AboutComponent } from './3/about/about.component';
 import { BubbleComponent } from './bubble/bubble.component';
 import { InicioTopComponent } from './1/inicio-top/inicio-top.component';
+import { FrutaComponent } from './1/fruta/fruta.component';
+import { VerduraComponent } from './1/verdura/verdura.component';
+import { CerealesComponent } from './1/cereales/cereales.component';
+import { OrigAnimalComponent } from './1/orig-animal/orig-animal.component';
+import { GrazucarComponent } from './1/grazucar/grazucar.component';
+import { AlcoholComponent } from './1/alcohol/alcohol.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,13 @@ import { InicioTopComponent } from './1/inicio-top/inicio-top.component';
     AboutComponent,
     MainComponent,
     BubbleComponent,
-    InicioTopComponent
+    InicioTopComponent,
+    FrutaComponent,
+    VerduraComponent,
+    CerealesComponent,
+    OrigAnimalComponent,
+    GrazucarComponent,
+    AlcoholComponent
 
   ],
   imports: [

@@ -22,5 +22,6 @@ export class MainComponent {
     titulo: 'About',
     img: 3,
     router: 'about'
-  }];
+  }
+];
 }

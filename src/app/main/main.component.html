@@ -2,7 +2,7 @@
   <h1>main</h1>
   <div>
     <li *ngFor="let sub of Menu ">
-      <div  class="menu-bubble" routerLink="/{{sub.router}}">
+      <div  class="menu-bubble" >
         <app-bubble   menuItems="{{sub.titulo}}" menuRouter="{{sub.router}}">
         </app-bubble>
       </div>
