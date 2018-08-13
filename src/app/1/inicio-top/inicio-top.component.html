@@ -26,21 +26,3 @@
   </div>
 </div>
 
-<button
-*ngIf="!contentHighlighted"
-(click)="contentHighlighted = true">
-Highlight Content
-</button>
-
-<button
-*ngIf="contentHighlighted"
-(click)="contentHighlighted = false">
-Un-highlight Content
-</button>
-
-<style>
-.highlighted{
-    outline: 1px solid #fd9696;
-    background-color: #fdfd96;
-}
-</style>
