@@ -40,4 +40,10 @@ import { AlcoholComponent } from './1/alcohol/alcohol.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+
+
+
+}

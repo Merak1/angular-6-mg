@@ -1,17 +1,21 @@
 <div class="center ">
   <h1>main</h1>
-  <div>
-    <li *ngFor="let sub of Menu ">
-      <div  class="menu-bubble" >
-        <app-bubble   menuItems="{{sub.titulo}}" menuRouter="{{sub.router}}">
-        </app-bubble>
-      </div>
-    </li>
+
+  <div class="tet">
+  <ul >
+      <li  *ngFor="let sub of Menu ">
+        <div  class="menu-bubble" >
+          <app-bubble   menuItems="{{sub.titulo}}" menuRouter="{{sub.router}}">
+          </app-bubble>
+        </div>
+      </li>
+    </ul>
   </div>
 </div>
 
 <style>
-.menu-bubble{
-  font-size:"{{sub.img}}";
+.highlighted{
+    outline: 1px solid #fd9696;
+    background-color: #fdfd96;
 }
 </style>

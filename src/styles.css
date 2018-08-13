@@ -1,5 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+@font-face {
+    font-family: myFirstFont;
+    src: url("/assets/Vegan\ Style\ Personal\ Use.ttf");
+}
+.benis{
 
+    background-image: url("/assets/coltello.jpeg");
+    /* background-size: cove r; */
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+.highlighted{
+    outline: 1px solid #fd9696;
+    background-color: #fdfd96;
+}
 :root {
     --main-bg-color: rgb(66, 0, 0);
     --color-burbuja: rgb(5, 94, 228);
@@ -9,7 +23,9 @@ li  {
     list-style: none;
 }    
 h1{
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
+    font-family: myFirstFont;
+    font-weight: normal;
 }    
 ul{
     text-align: center;
@@ -24,4 +40,3 @@ ul{
     vertical-align: middle;
     
 }    
-

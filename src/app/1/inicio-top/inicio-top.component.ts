@@ -33,7 +33,6 @@ export class InicioTopComponent  {
     router: 'alcohol'
   }];
 
-
   constructor() { }
 
 

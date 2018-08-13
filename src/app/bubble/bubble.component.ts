@@ -6,6 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./bubble.component.css']
 })
 export class  BubbleComponent {
+  
+  
+
 
   @Input() menuItems: string;
   @Input() menuLink: number;

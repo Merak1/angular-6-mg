@@ -9,6 +9,9 @@ import {
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
+
+  contentHighlighted: boolean = false;
+
   constructor() {}
   Menu = [{
     titulo: 'Iniciar',

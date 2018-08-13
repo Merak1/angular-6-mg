@@ -20,9 +20,9 @@
 }
 .bubble{
     /* background-color : var(--color-burbuja); */
-    background: rgb(255,15,145);
-    background: linear-gradient(0deg, rgba(255,15,145,1) 0%, rgba(246,146,219,1) 45%, rgba(255,253,78,1) 100%);
-    /* border: solid 3px black; */
+    background:#431f32;
+    /* background: linear-gradient(0deg, rgb(79, 247, 155) 0%, rgba(246,146,219,1) 45%, rgba(255,253,78,1) 100%);
+    border: solid 3px black; */
     height: 30vh;
     width: 30vh;
     position: relative;
@@ -55,11 +55,9 @@
     
 }
 #overlap{
-    margin-top: 50vh;
-}
-.bubble:hover #overlap{
-    /* margin-top: 0vh; */
-    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 0vh;    
 }
 
 .titulo{
@@ -85,7 +83,7 @@
 .loader {
     
     border: 20px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #ff006f; /* Blue */
+    border-top: 16px solid #ff2e89; /* Blue */
     border-radius: 50%;
     height: 30vh;
     width: 30vh;
@@ -148,23 +146,23 @@
     width: 100%;
     
 }
-.test{
-    /* width: 100%;
-    height: 100%;
-    margin-top: 50%;
-    position: absolute;
-    margin-right: 49%;
-    margin-left: -1vh; */
-    z-index: 2;
-}
 
 #overlap{ 
     font-family: 'Do Hyeon', sans-serif;
-    font-size: 2em;
+    font-size: 120%;
     /* font-weight: 900; */
-    color: rgb(255, 255, 255);
+    color: #ff167b;
     text-align: center;
 }
+
+.bubble:hover #overlap {
+    background-color: #ff2e89;
+    padding: 4px; 
+    border-radius: 5px;
+    width: 100%;
+    border-bottom: #431f32 solid 3px;
+    color: #431f32;
+} 
 .bubble:hover .overlord {
     height: 50VH;
     width: 50VH;
