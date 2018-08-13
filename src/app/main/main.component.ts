@@ -10,7 +10,6 @@ import {
 })
 export class MainComponent {
 
-  contentHighlighted: boolean = false;
 
   constructor() {}
   Menu = [{

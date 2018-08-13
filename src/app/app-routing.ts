@@ -16,7 +16,6 @@ const appRoutes: Routes = [
     {path: 'inicio', component : InicioComponent},
     {path: 'info', component : InfoComponent},
     {path: 'about', component : AboutComponent},
-
     {path: 'fruta' , component: FrutaComponent},
     {path: 'verdura' , component: VerduraComponent},
     {path: 'cereales-y-leguminosas' , component: CerealesComponent},
