@@ -1,0 +1,90 @@
+.navbar{
+    height:  80vh;
+    border: 2px solid rgb(54, 7, 85);
+}
+ 
+#myVideo {
+    position: relative;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: 3;
+}
+.content{
+    height: 20vh;
+    margin: -10px;
+
+}
+video{
+    min-width: 100%;
+    
+    }
+    
+    
+    .titulo {
+       position: absolute;
+       left: 50%;
+       top: 60%;
+       transform: translate(-50%,-50%);
+       text-align: center;
+       color: white;
+    
+    }
+    
+    
+    
+    div#general {
+     text-align: center;
+         background-color: #eee;
+         padding-top: 82px;
+         padding-bottom: 65px;
+         position: relative;
+         width: 100%;
+    }
+    
+    
+    .libre  {
+     position: relative;
+     width: 100%;
+     max-width: 1160px;
+     margin: 0 auto;
+     color: #3D5F4E;
+    }
+    
+    .icons{
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    box-sizing: inherit;
+    vertical-align: inherit;
+    background: transparent;
+    display: inline-block;
+    width: 100%;
+    margin-top: 64px;
+    color: #3D5F4E;
+    
+    }
+    
+    .icon1{
+     float: left;
+     width: 33.33%;
+    
+    }
+
+
+
+/* Add some content at the bottom of the video/page */
+/* .content {
+    position: fixed;
+    
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+ */

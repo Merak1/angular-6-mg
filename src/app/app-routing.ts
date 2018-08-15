@@ -10,6 +10,7 @@ import { OrigAnimalComponent } from './1/orig-animal/orig-animal.component';
 import { GrazucarComponent } from './1/grazucar/grazucar.component';
 import { AlcoholComponent } from './1/alcohol/alcohol.component';
 
+
 const appRoutes: Routes = [
     {path: '', component : MainComponent},
     {path: 'inicio', component : InicioComponent},
@@ -21,5 +22,4 @@ const appRoutes: Routes = [
     {path: 'aceites-grasas-y-azucares' , component: GrazucarComponent},
     {path: 'alcohol' , component: AlcoholComponent}
 ];
-
 export const routing = RouterModule.forRoot(appRoutes);

@@ -2,6 +2,7 @@
     font-family: myFirstFont;
     src: url("/assets/Vegan\ Style\ Personal\ Use.ttf");
 }
+
 .benis{
 
     background-image: url("/assets/coltello.jpeg");
@@ -15,8 +16,8 @@
     background-color: #fdfd96;
 }
 :root {
-    --main-bg-color: rgb(66, 0, 0);
-    --color-burbuja: rgb(5, 94, 228);
+    --main-bg-color: #3a0923;
+    --color-pink:  #ff2e89;
     --segundo-burbuja:rgb(99, 27, 170);
 }    
 li  {
@@ -26,6 +27,7 @@ h1{
     color: var(--main-bg-color);
     font-family: myFirstFont;
     font-weight: normal;
+    font-size: -webkit-xxx-large;
 }    
 ul{
     text-align: center;

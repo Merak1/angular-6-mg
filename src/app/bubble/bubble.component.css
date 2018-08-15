@@ -20,7 +20,7 @@
 }
 .bubble{
     /* background-color : var(--color-burbuja); */
-    background:#431f32;
+    background:var(--main-bg-color);
     /* background: linear-gradient(0deg, rgb(79, 247, 155) 0%, rgba(246,146,219,1) 45%, rgba(255,253,78,1) 100%);
     border: solid 3px black; */
     height: 30vh;
@@ -83,12 +83,10 @@
 .loader {
     
     border: 20px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #ff2e89; /* Blue */
+    border-top: 16px solid var(--color-pink); /* Blue */
     border-radius: 50%;
     height: 30vh;
     width: 30vh;
-    /* animation: spin 2s linear ; */
-    transform-origin: 50% 50% 0;
     position: absolute;
     padding: 10px;
     margin-right: auto;
@@ -153,15 +151,16 @@
     /* font-weight: 900; */
     color: #ff167b;
     text-align: center;
+    font-size: 1.7em;
 }
 
 .bubble:hover #overlap {
-    background-color: #ff2e89;
+    background-color: var(--color-pink);
     padding: 4px; 
     border-radius: 5px;
     width: 100%;
-    border-bottom: #431f32 solid 3px;
-    color: #431f32;
+    border-bottom:var(--main-bg-color) solid 3px;
+    color: var(--main-bg-color);
 } 
 .bubble:hover .overlord {
     height: 50VH;
