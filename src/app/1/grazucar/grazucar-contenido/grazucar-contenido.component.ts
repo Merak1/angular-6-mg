@@ -5,11 +5,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './grazucar-contenido.component.html',
   styleUrls: ['./grazucar-contenido.component.css']
 })
-export class GrazucarContenidoComponent implements OnInit {
+export class GrazucarContenidoComponent  {
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
+  GrazucarTipo  =  [{
+    titulo: 'Aceites y Grasas',
+    router: 'Aceites y Grasas',
+    img: 'aceite-y-grasa'
+     }, {
+    titulo: 'Azúcar',
+    router: 'Azúcar',
+    img: 'azucar'
+    }
+];
 }

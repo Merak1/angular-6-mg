@@ -16,8 +16,10 @@ import { GrazucarComponent } from './1/grazucar/grazucar.component';
 import { AlcoholComponent } from './1/alcohol/alcohol.component';
 import { VarTopComponent } from './var-top/var-top.component';
 import { FrutaContenidoComponent } from './1/fruta/fruta-contenido/fruta-contenido.component';
-import { VerduraContenidoComponent } from './verdura-contenido/verdura-contenido.component';
-import { GrazucarContenidoComponent } from './grazucar-contenido/grazucar-contenido.component';
+import { VerduraContenidoComponent } from './1/verdura/verdura-contenido/verdura-contenido.component';
+import { GrazucarContenidoComponent } from './1/grazucar/grazucar-contenido/grazucar-contenido.component';
+import { CerealesContenidoComponent } from './1/cereales/cereales-contenido/cereales-contenido.component';
+import { AnimalContenidoComponent } from './1/orig-animal/animal-contenido/animal-contenido.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { GrazucarContenidoComponent } from './grazucar-contenido/grazucar-conten
     VarTopComponent,
     FrutaContenidoComponent,
     VerduraContenidoComponent,
-    GrazucarContenidoComponent
+    GrazucarContenidoComponent,
+    CerealesContenidoComponent,
+    AnimalContenidoComponent
 
   ],
   imports: [

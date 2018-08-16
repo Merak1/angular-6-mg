@@ -1,44 +1,57 @@
 @font-face {
-    font-family: myFirstFont;
-    src: url("/assets/Vegan\ Style\ Personal\ Use.ttf");
+  font-family: myFirstFont;
+  src: url("/assets/Vegan\ Style\ Personal\ Use.ttf");
 }
 
-.benis{
-
-    background-image: url("/assets/coltello.jpeg");
-    /* background-size: cove r; */
-    background-repeat: no-repeat;
-
-    background-attachment: fixed;
+ul {
+  display: flex;
 }
-.highlighted{
-    outline: 1px solid #fd9696;
-    background-color: #fdfd96;
+
+.benis {
+  background-image: url("/assets/coltello.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
+.highlighted {
+  outline: 1px solid #fd9696;
+  background-color: #fdfd96;
+}
+
 :root {
-    --main-bg-color: #3a0923;
-    --color-pink:  #ff2e89;
-    --segundo-burbuja:rgb(99, 27, 170);
-}    
-li  {
-    list-style: none;
-}    
-h1{
-    color: var(--main-bg-color);
-    font-family: myFirstFont;
-    font-weight: normal;
-    font-size: -webkit-xxx-large;
-}    
-ul{
-    text-align: center;
-    padding-left: 0;
-}    
-.center{
-    text-align: center;
-    align-items: center;    
-}    
-    
-.circulo{
-    vertical-align: middle;
-    
-}    
+  --main-bg-color: #3a0923;
+  --color-pink: #ff2e89;
+  --segundo-burbuja: rgb(99, 27, 170);
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  color: var(--main-bg-color);
+  font-family: myFirstFont;
+  font-weight: normal;
+  font-size: -webkit-xxx-large;
+}
+
+ul {
+  text-align: center;
+  padding-left: 0;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+  display: table-caption;
+}
+
+.circulo {
+  vertical-align: middle;
+}
+.pinotepa{
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  align-items: center;
+}

@@ -1,8 +1,10 @@
 <ul>
-    <li  *ngFor="let fru of GrazucarTipo ">
+
+    <li  *ngFor="let fru of VerdurasTipo  ">
         <div  class="menu-bubble" >
             <app-bubble  menuLink ="{{fru.img}}"  menuItems="{{fru.titulo}}" menuRouter="{{fru.router}}">
             </app-bubble>
         </div>
     </li>
+    
 </ul>

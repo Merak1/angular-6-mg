@@ -9,7 +9,7 @@ import {
 })
 
 export class InicioComponent {
- 
+
   constructor() {}
 
 }

@@ -1,8 +1,8 @@
-
-<a routerLink="/">Regresar</a>
-<li  *ngFor="let sub of FrutasTipo ">
-    <div  class="menu-bubble" >
-        <app-bubble   menuItems="{{sub.titulo}}" menuRouter="{{sub.router}}">
-        </app-bubble>
-      </div>
-  </li>
+<ul>
+    <li  *ngFor="let fru of FrutasTipo ">
+        <div  class="menu-bubble" >
+            <app-bubble  menuLink ="{{fru.img}}"  menuItems="{{fru.titulo}}" menuRouter="{{fru.router}}">
+            </app-bubble>
+        </div>
+    </li>
+</ul>

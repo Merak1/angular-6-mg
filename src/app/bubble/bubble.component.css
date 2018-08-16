@@ -1,169 +1,166 @@
-
-
-.bubble-main{
-    /* background-color: rgb(92, 29, 46); */
-    
-    /* border: solid 3px black; */
-    height: 30vh;
-    width: 30vh;
-    padding: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: auto;
-    padding-left: auto;
-    cursor: pointer;
+.bubble-main {
+  height: 30vh;
+  width: 30vh;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: auto;
+  padding-left: auto;
+  cursor: pointer;
 }
-.ar{
-    margin: 20px;
-    
-
+.ar {
+  margin: 10px;
 }
-.bubble{
-    /* background-color : var(--color-burbuja); */
-    background:var(--main-bg-color);
-    /* background: linear-gradient(0deg, rgb(79, 247, 155) 0%, rgba(246,146,219,1) 45%, rgba(255,253,78,1) 100%);
+.bubble {
+  /* background-color : var(--color-burbuja); */
+  background: var(--main-bg-color);
+  /* background: linear-gradient(0deg, rgb(79, 247, 155) 0%, rgba(246,146,219,1) 45%, rgba(255,253,78,1) 100%);
     border: solid 3px black; */
-    height: 30vh;
-    width: 30vh;
-    position: relative;
-    border-radius: 50%;
-    transform-origin: 50% 50% 0;
-    transition: width 4s, height 4s;
-    transition: top 4s , left 4s;
-    transform-style: preserve-3D;
-    transition-delay: 1s;
-    
-    /* background-image: url("/assets/plato1.png"); */
-    background-size: 100%;
-    overflow: hidden;
+  height: 30vh;
+  width: 30vh;
+  position: relative;
+  border-radius: 50%;
+  transform-origin: 50% 50% 0;
+  transition: width 4s, height 4s;
+  transition: top 4s, left 4s;
+  transform-style: preserve-3D;
+  transition-delay: 1s;
+  /* background-image: url("/assets/plato1.png"); */
+  background-size: 100%;
+  overflow: hidden;
 }
 
-.bubble:hover{ 
-        /* background-color: var(--segundo-burbuja);     */
-        height: 35VH;
-        width: 35VH;
-        top:-2.5vh;
-        left:-2.5vh;     
-}
-#overlap{
-    z-index: 4;
-}
-.contenido-bubble{
-    padding: 5px;
-    margin-right: 5px;
-    margin-left:5px;
-    
-}
-#overlap{
-    position: absolute;
-    z-index: 1;
-    margin-top: 0vh;    
+.bubble:hover {
+  /* background-color: var(--segundo-burbuja);     */
+  height: 35VH;
+  width: 35VH;
+  top: -2.5vh;
+  left: -2.5vh;
 }
 
-.titulo{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+#overlap {
+  z-index: 4;
 }
-.titulo:hover{
-    font-size: 150%;
-    
 
+.contenido-bubble {
+  padding: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
+
+#overlap {
+  position: absolute;
+  z-index: 1;
+  margin-top: 0vh;
+}
+
+.titulo {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo:hover {
+  font-size: 120%;
+}
+
 .encabezado {
-    font-family: 'Do Hyeon', sans-serif;
-    font-size: 1.3em;
-    font-weight: 900;
-    color: rgb(0, 0, 82);
-    text-align: center
-    
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 1.3em;
+  font-weight: 900;
+  color: rgb(0, 0, 82);
+  text-align: center
 }
 
 .loader {
-    
-    border: 20px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid var(--color-pink); /* Blue */
-    border-radius: 50%;
-    height: 30vh;
-    width: 30vh;
-    position: absolute;
-    padding: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: auto;
-    padding-left: auto;
-    /* transition: display 5s; */
-}   
+  border: 20px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid var(--color-pink);
+  /* Blue */
+  border-radius: 50%;
+  height: 30vh;
+  width: 30vh;
+  position: absolute;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: auto;
+  padding-left: auto;
+  /* transition: display 5s; */
+}
+
 .bubble:hover .loader {
-    animation: spin 2s  ;
-    opacity: 0;
+  animation: spin 2s;
+  opacity: 0;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg);opacity: 1;}
-    100% { transform: rotate(360deg);opacity: 0;}
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
 }
 /* @keyframes fondo {
     0% {background-image: linear-gradient(0deg, rgba(255,15,145,1) 0%, rgba(246,146,219,1) 45%, rgba(255,253,78,1) 100%); }
     100% {background-image: url("/assets/zana.jpg");  background-repeat: no-repeat; }
 } */
-    @keyframes fondo {
-        0% { opacity: 0;}
-        100% { opacity: 1;}
-    }
-
-    .bubble:hover .new{
-        animation: fondo 2s linear;
-    }
-.new{
-    height:100%;
+@keyframes fondo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bubble:hover .new {
+  animation: fondo 2s linear;
 }
 .new {
-    transition: opacity 0.5s linear;
+  height: 100%;
 }
-
+.new {
+  transition: opacity 0.5s linear;
+}
 .new {
   opacity: 0;
   display: hidden;
-      margin-top: auto;
-      height: 50vh;
+  margin-top: auto;
+  height: 50vh;
 }
-
 .bubble:hover .new {
-    opacity: 1;
+  opacity: 1;
 }
 .bubble:hover .test {
-    display: none;
-} 
-
-.overlord{
-    padding: none;
-    transform-origin: 50% 50% 0;
-    height: 100%;
-    width: 100%;
-    
+  display: none;
 }
-
-#overlap{ 
-    font-family: 'Do Hyeon', sans-serif;
-    font-size: 120%;
-    /* font-weight: 900; */
-    color: #ff167b;
-    text-align: center;
-    font-size: 1.7em;
+.overlord {
+  padding: none;
+  transform-origin: 50% 50% 0;
+  height: 100%;
+  width: 100%;
 }
-
+#overlap {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 120%;
+  color: #ff167b;
+  text-align: center;
+  font-size: 1.7em;
+}
 .bubble:hover #overlap {
-    background-color: var(--color-pink);
-    padding: 4px; 
-    border-radius: 5px;
-    width: 100%;
-    border-bottom:var(--main-bg-color) solid 3px;
-    color: var(--main-bg-color);
-} 
+  background-color: var(--color-pink);
+  padding: 4px;
+  border-radius: 5px;
+  width: 100%;
+  border-bottom: var(--main-bg-color) solid 3px;
+  color: var(--main-bg-color);
+}
 .bubble:hover .overlord {
-    height: 50VH;
-    width: 50VH;
-    margin-top: -5vh;
-} 
+  height: 50VH;
+  width: 50VH;
+  margin-top: -5vh;
+}

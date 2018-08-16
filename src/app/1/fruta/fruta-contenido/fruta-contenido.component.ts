@@ -8,30 +8,30 @@ import { Component } from '@angular/core';
 export class FrutaContenidoComponent  {
 
   constructor() { }
-  FrutasTipo = [{
+  FrutasTipo  =  [{
     titulo: 'Bayas',
     router: 'Bayas',
-    img: 1
-    }, {
+    img: 'bayas'
+     }, {
     titulo: 'Cítricos',
     router: 'Cítricos',
-    img: 2
+    img: 'citricos'
     }, {
       titulo: 'Frutos secos',
       router: 'Frutos secos',
-      img: 3
+      img: 'frutos-secos'
     }, {
       titulo: 'Fruta dulce',
       router:  'Fruta dulce',
-      img: 4
+      img: 'fruta-dulce'
     }, {
       titulo: 'Exóticas',
       router: 'Exóticas',
-      img: 5
+      img: 'exoticas'
     }, {
       titulo: 'Cucurbitáceas',
       router: 'Cucurbitáceas',
-      img: 6
+      img: 'cucurbitaceas'
     }
 ];
 }
