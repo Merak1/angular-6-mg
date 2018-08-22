@@ -1,21 +1,15 @@
-import { Component} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-grazucar-contenido',
   templateUrl: './grazucar-contenido.component.html',
   styleUrls: ['./grazucar-contenido.component.css']
 })
-export class GrazucarContenidoComponent  {
+export class GrazucarContenidoComponent implements OnInit {
 
   constructor() { }
-  GrazucarTipo  =  [{
-    titulo: 'Aceites y Grasas',
-    router: 'Aceites y Grasas',
-    img: 'aceite-y-grasa'
-     }, {
-    titulo: 'Azúcar',
-    router: 'Azúcar',
-    img: 'azucar'
-    }
-];
+
+  ngOnInit() {
+  }
+
 }
