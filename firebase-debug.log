@@ -1,0 +1,108 @@
+[debug] [2018-08-25T00:49:48.976Z] ----------------------------------------------------------------------
+[debug] [2018-08-25T00:49:48.980Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-08-25T00:49:48.981Z] CLI Version:   4.2.0
+[debug] [2018-08-25T00:49:48.981Z] Platform:      linux
+[debug] [2018-08-25T00:49:48.981Z] Node Version:  v8.10.0
+[debug] [2018-08-25T00:49:48.981Z] Time:          Fri Aug 24 2018 19:49:48 GMT-0500 (CDT)
+[debug] [2018-08-25T00:49:48.981Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-25T00:49:48.997Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-25T00:49:48.997Z] > authorizing via signed-in user
+[debug] [2018-08-25T00:49:49.001Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-25T00:49:49.002Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-08-25T00:49:49.204Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-25T00:49:49.260Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/angular-test-arias  
+ 
+[debug] [2018-08-25T00:49:49.602Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'angular-test-arias'...
+[info] 
+[info] i  deploying hosting
+[debug] [2018-08-25T00:49:49.613Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/angular-test-arias/versions  
+
+[debug] [2018-08-25T00:49:50.311Z] <<< HTTP RESPONSE 200
+[info] i  hosting[angular-test-arias]: beginning deploy...
+[info] i  hosting[angular-test-arias]: found 482 files in ./
+[debug] [2018-08-25T00:49:51.162Z] [hosting] hash cache [] not populated
+[debug] [2018-08-25T00:50:14.078Z] [hosting] hash cache [] stored for 482 files
+[debug] [2018-08-25T00:50:14.079Z] [hosting][hash queue][FINAL]
+[debug] [2018-08-25T00:50:14.079Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/angular-test-arias/versions/32e956c39ac611d6:populateFiles  
+ <request body omitted>
+[debug] [2018-08-25T00:50:20.059Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-25T00:50:20.223Z] [hosting][populate queue][FINAL]
+[debug] [2018-08-25T00:50:20.224Z] [hosting] uploads queued: 435
+[debug] [2018-08-25T00:50:22.681Z] [hosting][upload]
+[debug] [2018-08-25T00:50:25.658Z] [hosting][upload]
+[debug] [2018-08-25T00:50:30.257Z] [hosting][upload]
+[debug] [2018-08-25T00:50:31.245Z] [uploadQueue] Retrying task 033b7b2d8c0304f97fae56f0d0bd4019d72b6f6c2d428557b2fe2779ffbe90b3
+[debug] [2018-08-25T00:50:31.256Z] [uploadQueue] Retrying task 67b30d6c8c950b1e2bb1430d6ba61b0d4fbf54caba0c80310fc677861eeef3a9
+[debug] [2018-08-25T00:50:31.601Z] [uploadQueue] Retrying task 1c906f42e26bb2209fbbb027ba46f1c790fdf2a23ff82a36395427d53c530dc4
+[debug] [2018-08-25T00:50:31.603Z] [uploadQueue] Retrying task bf7d7f79e06de4df96759b7de290baa8784f7263b9ff570b87683f3bac49e093
+[debug] [2018-08-25T00:50:31.892Z] [uploadQueue] Retrying task 06a218836ac10d7eef950597e12e0cef1d4adb5f4f5d4e63e1579d85bba8300f
+[debug] [2018-08-25T00:50:31.919Z] [uploadQueue] Retrying task d06af6b6806822647667b4f9895bb2794ac09d61ba76c517564552641f1a6c08
+[debug] [2018-08-25T00:50:35.837Z] [uploadQueue] Retrying task 7407a2001a5a13b618a9eedd35b5d4d7ce0f2bf44a88be9ad0d3b9bd50781d56
+[debug] [2018-08-25T00:50:40.265Z] [uploadQueue] Retrying task f74815905aa1e7877eb3efd1d396eacbf433f970f7bd29a966f39866fbd909a7
+[debug] [2018-08-25T00:50:41.264Z] [uploadQueue] Retrying task 79da1ad2fe8a88c1164c7dd524913556e27e328a4f5a75c8d32de3e92f5e60a9
+[debug] [2018-08-25T00:50:41.396Z] [uploadQueue] Retrying task aa382e499e51d6d1f518a3554d04018fed99385a4e94908b5d9ec3d1ca9c3b0f
+[debug] [2018-08-25T00:50:41.403Z] [uploadQueue] Retrying task 4a14d6cf5667ea96abd6567f429e035a82db2bc69bb69714b9104ddc0afcb617
+[debug] [2018-08-25T00:50:41.417Z] [uploadQueue] Retrying task d56583b405a179c18ac5bf48321697595d881273b83255174372df53ac86d371
+[debug] [2018-08-25T00:50:41.603Z] [uploadQueue] Retrying task ffcddbaed434a4d0de4ec51a75c34c906c7678c06c14e540bdce6e67253e74d0
+[debug] [2018-08-25T00:50:42.028Z] [uploadQueue] Retrying task 9d7b83a7fa7cf62173a3e2185053b9cd1bc551fe432c6cb627cd78d01346082b
+[debug] [2018-08-25T00:50:42.082Z] [uploadQueue] Retrying task 5305e449acd9bf5034444a5bba5a7e11ffd3c59380344f6fa4cd51afe7015707
+[debug] [2018-08-25T00:50:42.292Z] [uploadQueue] Retrying task dc7a84a0a2df34ee770ae831dbb47bde6a2e2ef378dd350e776dc6870cea8c9b
+[debug] [2018-08-25T00:50:42.481Z] [uploadQueue] Retrying task 06449a04092dc78e5d5e2fe6522526dc823b2d409983ba15da76c9082de3c21b
+[debug] [2018-08-25T00:50:42.505Z] [uploadQueue] Retrying task 1378176d729bc4ca022a2791e465a53bb05a0873edc309821042d50dc91537a9
+[debug] [2018-08-25T00:50:42.998Z] [uploadQueue] Retrying task 53ecf0073765d6ec0126fee95ea285c5f8527114c9a6a1b88751d80b8890443b
+[debug] [2018-08-25T00:50:43.426Z] [uploadQueue] Retrying task 67b30d6c8c950b1e2bb1430d6ba61b0d4fbf54caba0c80310fc677861eeef3a9
+[debug] [2018-08-25T00:50:44.238Z] [uploadQueue] Retrying task 8172ea922838e51bec2609db2a429f75d9f21c2af019b8174dc9c8bebd30dd5c
+[debug] [2018-08-25T00:50:47.083Z] [uploadQueue] Retrying task 06a218836ac10d7eef950597e12e0cef1d4adb5f4f5d4e63e1579d85bba8300f
+[debug] [2018-08-25T00:50:49.653Z] [uploadQueue] Retrying task 824ef54450cdc837ace21a9d11445d3135b9cf23b3b348a851319e8e52aac619
+[debug] [2018-08-25T00:50:49.672Z] [uploadQueue] Retrying task 2c7203d7369fd905cdd261bca86c7b723f4fd4b98908499257cce5eb9fa26599
+[debug] [2018-08-25T00:50:51.670Z] [uploadQueue] Retrying task 51d69d76d916fb588009a725faccfec7be07d07018484253f3f5565b4cbb8644
+[debug] [2018-08-25T00:52:33.713Z] [uploadQueue] Retrying task 10016b432804fbb6469297ff7a59f7f2a3014b3c3dc9d27f0c0adf29f8ff4952
+[debug] [2018-08-25T00:52:33.717Z] [uploadQueue] Retrying task 4f4f4dec5ac6318bafcfb6a305ac2a723c326fee71eff7162ce789b83dc421ac
+[debug] [2018-08-25T00:52:33.717Z] [uploadQueue] Retrying task 4ba84950e2214ec08b4e8271b3727a3f4205bdaa5404d32439d12c71298e98c1
+[debug] [2018-08-25T00:52:33.717Z] [uploadQueue] Retrying task 8a52f72e3b7c0befc68af4bf812dae3d3ed200521ba01f745d0be6871bfc9405
+[debug] [2018-08-25T00:52:33.718Z] [uploadQueue] Retrying task 14e7d2bacd9081160533237a3f36bd84610faaaf791892c2fc35bee5bfe97855
+[debug] [2018-08-25T00:52:33.718Z] [uploadQueue] Retrying task 3218a69faf0960fde6c77d9d4e285c33d98fbceda61803444b4c583a18ad2c00
+[debug] [2018-08-25T00:52:35.760Z] [uploadQueue] Retrying task f817cff1590086db7065992b7c353d4d16b8216b9f46c83995b1d0e3e908b932
+[debug] [2018-08-25T00:52:35.760Z] [uploadQueue] Retrying task bf04736be0489b937bf14ff371b4ac79100fe83d12749c12b100c3d5df6cffc9
+[debug] [2018-08-25T00:52:35.763Z] [uploadQueue] Retrying task a37ebeb3ad8668bc4d706cca99f910615d0a958bcf1e57e736ce3b489c6586b8
+[debug] [2018-08-25T00:52:35.763Z] [uploadQueue] Retrying task 20f7c9465bcba8aed35058aa0da1d8f59a62e5f194335f53174f5b06cb66fe50
+[debug] [2018-08-25T00:52:35.764Z] [uploadQueue] Retrying task 4383a08a8ba50031ef0275fcfecd05e18f12bd261a480d884c877a566021f3dc
+[debug] [2018-08-25T00:52:35.766Z] [uploadQueue] Retrying task 9e44738dfa954cb495674aba419ce3ccd0cae507a56d1b64beff6e3da69abb48
+[debug] [2018-08-25T00:52:37.807Z] [uploadQueue] Retrying task eda644ad4d2d94b754e73a4e1ab1aa8fe0d875b9e795478bc3caf590a042395a
+[debug] [2018-08-25T00:52:41.903Z] [uploadQueue] Retrying task 9a9213b6c1a569eb1594a8b21be8d87b7a3746d94aa79c49eb99fd434b2d3a1d
+[debug] [2018-08-25T00:52:41.907Z] [uploadQueue] Retrying task 2674c40706b43eda932fd5aafe4571622727e21440ea96048ce01fa9340ef061
+[debug] [2018-08-25T00:52:42.304Z] [uploadQueue] Retrying task 033b7b2d8c0304f97fae56f0d0bd4019d72b6f6c2d428557b2fe2779ffbe90b3
+[debug] [2018-08-25T00:52:43.952Z] [uploadQueue] Retrying task 8f08dc786ff3f584339a53f576a7ecd595ceeab93682c70570e9f30d75645d2d
+[debug] [2018-08-25T01:03:01.010Z] ----------------------------------------------------------------------
+[debug] [2018-08-25T01:03:01.014Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-08-25T01:03:01.014Z] CLI Version:   4.2.0
+[debug] [2018-08-25T01:03:01.014Z] Platform:      linux
+[debug] [2018-08-25T01:03:01.014Z] Node Version:  v8.10.0
+[debug] [2018-08-25T01:03:01.015Z] Time:          Fri Aug 24 2018 20:03:01 GMT-0500 (CDT)
+[debug] [2018-08-25T01:03:01.015Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-25T01:03:01.030Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-25T01:03:01.030Z] > authorizing via signed-in user
+[debug] [2018-08-25T01:03:01.034Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/angular-test-arias  
+ 
+[debug] [2018-08-25T01:03:01.543Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'angular-test-arias'...
+[info] 
+[info] i  deploying hosting
+[debug] [2018-08-25T01:03:01.552Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/angular-test-arias/versions  
+
+[debug] [2018-08-25T01:03:02.703Z] <<< HTTP RESPONSE 200
+[info] i  hosting[angular-test-arias]: beginning deploy...
+[info] i  hosting[angular-test-arias]: found 482 files in ./
+[debug] [2018-08-25T01:03:03.073Z] [hosting] hash cache [] stored for 482 files
+[debug] [2018-08-25T01:03:03.074Z] [hosting][hash queue][FINAL]
+[debug] [2018-08-25T01:03:03.074Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/angular-test-arias/versions/23bc2329a413150c:populateFiles  
+ <request body omitted>
+[debug] [2018-08-25T01:03:07.822Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-25T01:03:07.835Z] [hosting][populate queue][FINAL]
+[debug] [2018-08-25T01:03:07.836Z] [hosting] uploads queued: 7
